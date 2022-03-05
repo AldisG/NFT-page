@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-container {
+  &.brand {
+    & img {
+      height: 100%;
+      color: red;
+    }
+  }
+}
+.toggle-container {
+  display: none;
+}
+.links-container {
+  & .links {
+    display: flex;
+    gap: 4rem;
+    & a {
+      color: var(--accent-color1);
+    }
+    & li:last-child a {
+      color: var(--pink);
+    }
+  }
+}
