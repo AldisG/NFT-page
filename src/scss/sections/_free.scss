@@ -8,7 +8,7 @@
   position: relative;
   height: 25rem;
   border-radius: 1rem;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 1;
   background-color: var(--orange);
 }
@@ -40,4 +40,31 @@
   gap: 1.5rem;
   padding: 2rem 0 0 3rem;
   font-size: 1.3rem;
+}
+.free__title {
+  font-size: 2rem;
+}
+.free__cards {
+  display: flex;
+  position: absolute;
+  right: 40%;
+  top: -2rem;
+  & .free__card1 {
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    z-index: 3;
+    transform: rotate(-10deg);
+  }
+  & .free__card2 {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    z-index: 2;
+    transform: rotate(5deg);
+  }
+  .card-image img {
+    height: 18rem;
+    width: 20rem;
+  }
 }

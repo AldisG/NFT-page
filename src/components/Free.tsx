@@ -1,5 +1,5 @@
-import React from 'react';
 import { icon, super1, release2 } from '../util/importedImages';
+import Card from './Card';
 
 const Free = () => {
   return (
@@ -17,8 +17,26 @@ const Free = () => {
           <p className="free__description">Sign up today and get a free NFT!</p>
         </div>
         <div className="free__cards">
-          <div className="free__card1"></div>
-          <div className="free__card2"></div>
+          <div className="free__card1">
+            <Card
+              image={super1}
+              series="Floop Series"
+              title="Purple man"
+              price="2.99"
+              tag="12983"
+              time={1}
+            />
+          </div>
+          <div className="free__card2">
+            <Card
+              image={release2}
+              series="Gloop Series"
+              title="Purple man"
+              price="4.99"
+              tag="12973"
+              time={2}
+            />
+          </div>
         </div>
       </div>
     </div>

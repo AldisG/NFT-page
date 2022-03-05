@@ -1,0 +1,41 @@
+.card {
+  background-color: var(--card-color);
+  width: max-content;
+  border-radius: 1rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.card-heading,
+.card-details,
+.card-sub-details {
+  display: flex;
+  justify-content: space-between;
+}
+.card-series,
+.card-top {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.card-series {
+  color: var(--orange);
+}
+.card-top {
+  color: var(--accent-color3);
+  padding-right: 0.7rem;
+}
+.card-details {
+  color: var(--accent-color1);
+  padding: 0 1rem;
+  text-align: center;
+}
+.card-sub-details {
+  display: none;
+  & span {
+    color: var(--accent-color3);
+    font-size: 0.9rem;
+  }
+}
