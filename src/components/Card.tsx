@@ -5,7 +5,7 @@ type Props = {
   image: string;
   series: string;
   title: string;
-  price: string;
+  price: number;
   tag: string;
   time: number;
 };

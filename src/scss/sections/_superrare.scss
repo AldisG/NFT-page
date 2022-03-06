@@ -1,0 +1,28 @@
+.super-rare,
+.super__title-container {
+  display: flex;
+  flex-direction: column;
+}
+.super-rare {
+  gap: 2rem;
+}
+.super__title-container {
+  gap: 1rem;
+}
+.super__title {
+  color: var(--accent-color1);
+  font-size: 2.5rem;
+}
+.super__description {
+  color: var(--accent-color3);
+}
+a {
+  color: var(--accent-color3);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.super__cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}

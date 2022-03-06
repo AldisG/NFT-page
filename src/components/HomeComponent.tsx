@@ -1,4 +1,5 @@
 import home from '../img/home.png';
+import SignUpBtn from './SignUpBtn';
 const HomeComponent = () => {
   return (
     <div className="home">
@@ -10,7 +11,7 @@ const HomeComponent = () => {
             Don't miss out on Our New NFT! Sign up bellow to recieve updates
             when we go live!
           </p>
-          <button className="sign-up-button">Sign Up</button>
+          <SignUpBtn />
         </div>
 
         <div className="home__image-container">

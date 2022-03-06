@@ -1,0 +1,87 @@
+.releases {
+  display: flex;
+  margin: 5rem 0;
+  flex-direction: column;
+  gap: 4rem;
+}
+.release {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0.5rem;
+}
+.release__content {
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.release__title {
+  font-size: 2rem;
+}
+.release__description {
+  font-size: 1.3rem;
+}
+.rel__link {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  & svg {
+    font-size: 1.2rem;
+  }
+}
+.rel-orange {
+  background-color: var(--orange);
+}
+.rel-green {
+  background-color: var(--green);
+}
+.rel__image {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  img {
+    height: 24rem;
+  }
+}
+
+.rel__ellipse {
+  position: absolute;
+  right: 0;
+  bottom: -40%;
+  width: 20rem;
+  height: 20rem;
+  filter: blur(100px);
+  z-index: -1;
+}
+.rel--pink {
+  background-color: var(--pink);
+}
+// Second Part
+.rel__card-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 2rem;
+  .rel__ellipse {
+    position: absolute;
+    left: 0;
+    bottom: -45%;
+    width: 20rem;
+    height: 20rem;
+    filter: blur(100px);
+    z-index: -1;
+  }
+  .rel--orange {
+    background-color: var(--orange);
+  }
+}

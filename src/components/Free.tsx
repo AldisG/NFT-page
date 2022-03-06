@@ -22,7 +22,7 @@ const Free = () => {
               image={super1}
               series="Floop Series"
               title="Purple man"
-              price="2.99"
+              price={2.99}
               tag="12983"
               time={1}
             />
@@ -32,7 +32,7 @@ const Free = () => {
               image={release2}
               series="Gloop Series"
               title="Purple man"
-              price="4.99"
+              price={4.99}
               tag="12973"
               time={2}
             />
