@@ -1,0 +1,50 @@
+footer,
+.brand-container,
+.brand__link,
+.brand__link ul {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin: 6rem 0;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  color: var(--accent-color3);
+}
+.upper,
+.lower {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.upper {
+  color: var(--accent-color3);
+}
+.brand-container {
+  gap: 1.5rem;
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.brand-links {
+  display: flex;
+  gap: 8rem;
+}
+.brand__link {
+  gap: 2rem;
+  h4 {
+    color: var(--accent-color1);
+    text-transform: uppercase;
+  }
+  ul {
+    gap: 1rem;
+  }
+}
+
+.lower {
+  span {
+    color: var(--accent-color3);
+  }
+}

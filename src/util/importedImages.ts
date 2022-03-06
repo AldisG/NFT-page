@@ -17,6 +17,7 @@ import super4 from '../img/super4.png';
 
 import signup from '../img/signup.png';
 
+import logo from '../img/logo.png';
 export const clientsDataArr = [
   clients1,
   clients2,
@@ -35,4 +36,5 @@ export {
   eth1,
   eth2,
   signup,
+  logo,
 };
