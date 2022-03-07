@@ -8,7 +8,7 @@ export const revealContents = () => {
     reset: false,
   });
   scrollAnims.reveal(
-    `nav, .home, .free, .clients, .super-rare, .releases, .like, .signup,footer
+    `.home, .free, .clients, .super-rare, .releases, .like, .signup,footer
     `,
     { interval: 500 }
   );
