@@ -10,7 +10,8 @@
   border-radius: 0.5rem;
 }
 .release__content {
-  padding: 5rem 8rem;
+  // padding: 5rem 8rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -65,7 +66,6 @@
 // Second Part
 .rel__card-container {
   position: relative;
-  overflow: hidden;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -83,5 +83,46 @@
   }
   .rel--orange {
     background-color: var(--orange);
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .release {
+    grid-template-columns: 1fr;
+  }
+  .rel__card-container {
+    .card {
+      zoom: 0.5 !important;
+    }
+    .rel__ellipse {
+      top: -45%;
+      filter: blur(100px);
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1080px) {
+  .releases {
+    margin: 0;
+    gap: 0;
+  }
+  .release {
+    border-radius: 0;
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  // .release__content {
+  //   padding: 1rem !important;
+  // }
+  .rel-orange {
+    padding: 0;
+  }
+  .rel-green {
+    padding: 0;
+  }
+  .rel__card-container {
+    .rel__ellipse {
+      top: -45%;
+      filter: blur(100px);
+    }
   }
 }

@@ -1,6 +1,6 @@
 .signup {
   padding-top: 3rem;
-  overflow-y: hidden;
+  overflow: hidden;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -75,4 +75,34 @@
   background-color: var(--orange);
   bottom: 40%;
   right: 40%;
+}
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  .signup {
+    padding: 1rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .signup-container {
+    font-size: 1.6rem;
+    align-items: center;
+  }
+  .signup__sub-tittle {
+    font-size: 2rem;
+  }
+  .signup__title {
+    font-size: 3rem;
+  }
+  .signup__description {
+    font-size: 2rem;
+  }
+  .signup__img {
+    img {
+      height: 20rem;
+    }
+  }
+  .signup__ellipse {
+    width: 10rem;
+    height: 10rem;
+    filter: blur(40px);
+  }
 }

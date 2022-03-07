@@ -15,7 +15,7 @@ export const socialLinks = [
 ] as any[];
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="upper">
         <div className="brand-container">
           <div className="brand">

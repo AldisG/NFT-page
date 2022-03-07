@@ -25,4 +25,24 @@ a {
   display: flex;
   justify-content: space-evenly;
   gap: 4rem;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .super-rare {
+    padding: 1rem 2rem;
+    width: 100vw;
+  }
+  .super__cards {
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 1.5rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .card {
+    zoom: 0.7 !important;
+    box-shadow: -8px 8px 8px var(--item-shadow);
+  }
 }
