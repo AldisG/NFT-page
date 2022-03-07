@@ -5,7 +5,13 @@ const ScrollToTop = () => {
   window.addEventListener('scroll', () => {
     setVisibleBar(window.pageYOffset > 100);
   });
-  return <></>;
+  return (
+    <div className={`scroll-top ${!visibleBar ? 'invisible-bar' : ''}`}>
+      <a href="#" className="sign-up-button scroll-top-btn">
+        <BsChevronUp />
+      </a>
+    </div>
+  );
 };
 
 export default ScrollToTop;

@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div className="lower">
-        <span> Copyright 2022 NFT</span>
+        <span>&copy; Copyright 2022 NFT</span>
         <span>Launching 2022</span>
       </div>
     </footer>

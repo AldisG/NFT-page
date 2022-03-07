@@ -2,7 +2,7 @@ import home from '../img/home.png';
 import SignUpBtn from './SignUpBtn';
 const HomeComponent = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-container">
         <div className="home__content">
           <div className="home__sub-tittle">Launching Soon</div>

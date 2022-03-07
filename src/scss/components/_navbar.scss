@@ -5,9 +5,8 @@ nav {
 }
 .brand-container {
   &.brand {
-    & img {
+    img {
       height: 100%;
-      color: red;
     }
   }
 }
@@ -17,12 +16,118 @@ nav {
 .links-container {
   & .links {
     display: flex;
+    align-items: center;
     gap: 4rem;
     & a {
       color: var(--accent-color1);
     }
-    & li:last-child a {
-      color: var(--pink);
+    & li:last-of-type {
+      a {
+        color: var(--pink);
+      }
     }
+  }
+}
+.light-th-icn {
+  color: yellow;
+}
+.dark-th-icn {
+  color: #333;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  nav {
+    padding: 2rem 0;
+  }
+  .brand-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    .brand {
+      img {
+        height: 3rem;
+      }
+    }
+  }
+  .toggle-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+    z-index: 100;
+    color: var(--accent-color1);
+    .toggle {
+      display: block;
+      cursor: pointer;
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+  .links-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    height: 100vh;
+    width: 25rem;
+    transition: box-shadow 0.2s ease-in-out;
+    border: solid 0.3px transparent;
+
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(100deg, var(--pink), var(--orange));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    & .links {
+      flex-direction: column;
+      & li:last-of-type {
+        a {
+          color: var(--accent-color1);
+        }
+      }
+    }
+  }
+  .nav-visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+}
+// Logo in Light theme
+[data-theme='light'] {
+  .brand-container {
+    .brand {
+      img {
+        filter: brightness(0);
+      }
+    }
+  }
+}
+
+.theme-switch-btn {
+  background-color: var(--item-shadow);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  &:hover {
+    outline: 2px solid var(--accent-color1);
   }
 }

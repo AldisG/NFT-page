@@ -6,12 +6,14 @@
   --red: #ff3939;
   --light-green: #edfff6;
   --light-orange: #fff0e8;
+  --transparent-orange: #ffc71055;
   --accent-color1: #ffffff;
   --accent-color2: #555555;
   --accent-color3: #cccccc;
   --card-color: #000000;
   --background: #111111;
   --font-family: 'Inter', sans-serif;
+  --item-shadow: #ffffff66;
 }
 
 [data-theme='light'] {
@@ -20,6 +22,7 @@
   --accent-color2: #eeeeee;
   --accent-color3: #777777;
   --card-color: #eeeeee;
+  --item-shadow: #33333377;
 }
 
 html {
@@ -29,7 +32,7 @@ html {
   background-color: var(--background);
   font-family: var(--font-family);
   overflow-x: hidden;
-  transition: 0.5s ease-in-out; // for dark/lightmode transitions
+  transition: 0.3s ease-in-out; // for dark/lightmode transitions
   padding: 4rem;
   @media screen and (min-width: 28.8rem) and (max-width: 108rem) {
     padding: 2rem 4rem;

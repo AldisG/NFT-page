@@ -4,7 +4,7 @@ import { ImSun } from 'react-icons/im';
 import { FaTiktok } from 'react-icons/fa';
 import {
   BsChevronUp,
-  BsLampFill,
+  BsMoonFill,
   BsFacebook,
   BsTwitter,
   BsInstagram,
@@ -14,7 +14,7 @@ export {
   GiHamburgerMenu,
   MdClose,
   ImSun,
-  BsLampFill,
+  BsMoonFill,
   BsChevronUp,
   BsFacebook,
   BsTwitter,
