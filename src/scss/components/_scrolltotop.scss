@@ -23,6 +23,7 @@
   padding: 0rem;
   font-size: 2rem;
   box-shadow: 0 8px 8px var(--item-shadow);
+  position: relative;
 
   &:active {
     box-shadow: 2px 100rem 1px var(--background) inset;
