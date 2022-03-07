@@ -53,6 +53,7 @@
 .home__image-container {
   text-align: center;
   position: relative;
+  align-self: center;
   z-index: 4;
 }
 .home__ellipse {
@@ -71,4 +72,33 @@
   background-color: var(--orange);
   bottom: 40%;
   right: 40%;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .home {
+    padding: 1rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .home-container {
+    font-size: 1.6rem;
+  }
+  .home__sub-tittle {
+    font-size: 2rem;
+  }
+  .home__title {
+    font-size: 3rem;
+  }
+  .home__description {
+    font-size: 2rem;
+  }
+  .home__img {
+    img {
+      height: 20rem;
+    }
+  }
+  .home__ellipse {
+    width: 10rem;
+    height: 10rem;
+    filter: blur(40px);
+  }
 }

@@ -33,12 +33,16 @@ html {
   font-family: var(--font-family);
   overflow-x: hidden;
   transition: 0.3s ease-in-out; // for dark/lightmode transitions
-  padding: 4rem;
-  @media screen and (min-width: 28.8rem) and (max-width: 108rem) {
+  padding: 0 1rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 80rem) and (max-width: 108rem) {
     padding: 2rem 4rem;
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  @media screen and (min-width: 280px) and (max-width: 80px) {
+    padding: 1rem;
   }
 }
 ::-webkit-scrollbar {
